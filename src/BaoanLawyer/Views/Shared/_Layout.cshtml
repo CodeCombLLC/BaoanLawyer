@@ -1,0 +1,293 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - 黑龙江保安律师事务所</title>
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+    <link href="~/styles/reset.css" rel="stylesheet" />
+    <link href="~/styles/style.css" rel="stylesheet" />
+    <link href="~/styles/grid.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.12.1.min.js"></script>
+    <script src="~/scripts/superfish.js"></script>
+    <script src="~/scripts/ff-cash.js"></script>
+    <script src="~/scripts/easytooltip.js"></script>
+    <script src="~/scripts/jquery.cycle.all.min.js"></script>
+    <script src="~/scripts/script.js"></script>
+    <script>
+		$(function(){
+			//  Initialize jQuery Cycle Plugin
+			$('#slideshow').cycle({
+				fx: 'fade',
+				speed: 800,
+				timeout: 6000,
+				prev: '#prev',
+				next: '#next',
+				pager: '#nav'
+			})
+
+			$('#slideshow').hover(
+				function(){$(this).find('.banner').stop().animate({right:'0px'}, 300)},
+				function(){$(this).find('.banner').stop().animate({right:'-303px'}, 300)}
+			)
+		})
+    </script>
+    <!--[if lt IE 8]>
+        <div style='clear: both; text-align: center; position: relative;'>
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+                <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+            </a>
+        </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+    <![endif]-->
+</head>
+<body id="page1">
+    <div class="block-1">
+        <div class="main">
+            <!-- header -->
+            <header>
+                <!-- menu -->
+                <nav class="fl-l">
+                    <ul class="sf-menu">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li>
+                            <a href="#">COMPANY</a>
+                            <ul>
+                                <li><a href="#">HISTORY</a></li>
+                                <li>
+                                    <a href="#">NEWS</a>
+                                    <ul>
+                                        <li><a href="#">LATEST</a></li>
+                                        <li><a href="#">ARCHIVE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">RESOURCES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PARTNERS</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+
+                    <div class="clear"></div>
+                </nav><!-- end menu -->
+
+                <div class="block-2 fl-l">
+                    <ul class="list-3">
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </header><!-- end header -->
+        </div>
+    </div>
+
+    <div class="block-6">
+        <div class="main">
+            <h1><a href="#"></a></h1>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="slide-shadow">
+            <!-- slider -->
+            <div class="slider-holder">
+                <div id="slideshow">
+                    <div>
+                        <img src="images/slide-1.jpg" alt="" />
+                        <span class="banner">
+                            <span class="banner-inner-1 ident-top-1">WE HOLD</span>
+                            <span class="banner-inner-2 ident-top-2">THE NATIONAL</span>
+                            <span class="banner-inner-3 ident-top-2">QUALITY STANDARD</span>
+                            <a class="banner-button ident-top-3" href="#">Click Here!</a>
+                        </span>
+                    </div>
+
+                    <div>
+                        <img src="images/slide-2.jpg" alt="" />
+                        <span class="banner">
+                            <span class="banner-inner-1 ident-top-1">PRECISE</span>
+                            <span class="banner-inner-2 ident-top-2">AND IMPARTIAL</span>
+                            <span class="banner-inner-3 ident-top-2">APPROACH</span>
+                            <a class="banner-button ident-top-3" href="#">Click Here!</a>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="images/slide-3.jpg" alt="" />
+                        <span class="banner">
+                            <span class="banner-inner-1 ident-top-1">WE FIND</span>
+                            <span class="banner-inner-2 ident-top-2">THE BEST</span>
+                            <span class="banner-inner-4 ident-top-4">PROFESSIONAL SOLUTIONS</span>
+                            <a class="banner-button ident-top-5" href="#">Click Here!</a>
+                        </span>
+                    </div>
+                </div>
+                <ul id="nav"></ul>
+            </div><!-- end slider -->
+        </div>
+    </div>
+
+    <!-- content -->
+    <section id="content">
+        <div class="main">
+            @RenderBody()
+            <div class="wrapper ident-bot-7">
+                <div class="bg-cover-1 fl-l">
+                    <div class="block-7 bg-1">
+                        <h2 class="h2 ident-bot-3">Welcome!</h2>
+                        <div class="line ident-bot-2"></div>
+                        <img class="ident-bot-4" src="images/1page_img1.jpg" alt="" />
+                        <p class="font-4 ident-bot-1">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates doloresed massa lorem.</p>
+                        <p class="font-4 ident-bot-1">Estudesu usandaeItaque earumum reruhitenetura sapientemi delectuuut</p>
+                        <a class="button" href="#">READ MORE</a>
+                    </div>
+                </div>
+                <div class="bg-cover-2 fl-l">
+                    <div class="block-7 bg-2">
+                        <h2 class="h2 ident-bot-3">Advantages</h2>
+                        <div class="line ident-bot-2"></div>
+                        <img class="ident-bot-4" src="images/1page_img2.jpg" alt="" />
+                        <p class="font-4 ident-bot-1">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates Estudesu usandaeItaque earumum reruhitenetura sapientemi delectuuut reicomum iendis voluptatibusasstum maiores alias. Asperiores repellat</p>
+                        <a class="button" href="#">READ MORE</a>
+                    </div>
+                </div>
+                <div class="bg-cover-3 fl-l">
+                    <div class="block-7 bg-3">
+                        <h2 class="h2 ident-bot-3">Practice</h2>
+                        <div class="line ident-bot-4"></div>
+                        <p class="font-4 ident-bot-5">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates doloresed massa astum.</p>
+                        <ul class="list-1 ident-bot-6">
+                            <li><a href="#">Elder Abuse Cases</a></li>
+                            <li><a href="#">Employment Law</a></li>
+                            <li><a href="#">Family Law</a></li>
+                            <li><a href="#">Immigration Law</a></li>
+                            <li><a href="#">Insurance Law</a></li>
+                            <li><a href="#">Malpractice Law</a></li>
+                            <li><a href="#">Real Property Law</a></li>
+                            <li><a href="#">Securities Law</a></li>
+                            <li><a href="#">Workers' Compensation Law</a></li>
+                            <li><a href="#">Social Security Law</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end content -->
+    <!-- content -->
+    <section id="content-2">
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_5 suffix_1">
+                    <h2 class="ident-bot-8">Need Practical Help?</h2>
+                    <img class="img-border ident-bot-2" src="images/1page_img3.jpg" alt="" />
+                    <p><strong>Lorem ipsum dolore concectetuor</strong></p>
+                    <p class="ident-bot-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <a class="button-2" href="#">Read more</a>
+                </div>
+
+                <div class="grid_6">
+                    <h2 class="ident-bot-8">Featured Solutions</h2>
+                    <div class="wrapper ident-bot-10">
+                        <img class="img-border ident-right-1 fl-l" src="images/1page_img4.jpg" alt="" />
+                        <div class="extra-wrap inner-ident-3">
+                            <ul class="list-5">
+                                <li><a href="#">Business Solutions</a></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                        </div>
+                    </div>
+
+                    <div class="wrapper ident-bot-11">
+                        <img class="img-border ident-right-1 fl-l" src="images/1page_img5.jpg" alt="" />
+                        <div class="extra-wrap inner-ident-3">
+                            <ul class="list-5">
+                                <li><a href="#">Personal Solutions</a></li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                        </div>
+                    </div>
+                    <a class="button-2" href="#">View All</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- end content -->
+    <!-- footer -->
+    <footer>
+        <div class="block-3">
+            <div class="container_12">
+                <div class="wrapper separator-1">
+                    <div class="grid_7">
+                        <h2 class="ident-bot-2">Legal Topics</h2>
+                        <div class="grid_2 alpha">
+                            <ul class="list-2">
+                                <li><a href="#">Auto Accidents</a></li>
+                                <li><a href="#">Bankruptcy</a></li>
+                                <li><a href="#">Business Law</a></li>
+                                <li><a href="#">Child Custody</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="grid_2 suffix_1">
+                            <div class="inner-ident-1">
+                                <ul class="list-2 marker-2">
+                                    <li><a href="#">Child Support</a></li>
+                                    <li><a href="#">Civil Rights</a></li>
+                                    <li><a href="#">Consumer</a></li>
+                                    <li><a href="#">Criminal Law</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid_2 omega">
+                            <ul class="list-2 marker-2">
+                                <li><a href="#">Discrimination</a></li>
+                                <li><a href="#">Divorce</a></li>
+                                <li><a href="#">Drunk Driving</a></li>
+                                <li><a href="#">Education</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid_5">
+                        <div class="inner-ident-2">
+                            <div class="block-4">
+                                <p class="font-1 ident-bot-2">Our Newsletter</p>
+                                <form class="ident-bot-3" id="newsletter" method="get"><input type="text" name="name" /></form>
+                                <a class="link-1 fl-l" href="#">Unsubscribe</a>
+                                <a href="#" class="button-3 fl-r" onClick="document.getElementById('newsletter').submit()">SUBSCRIBE</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-5">
+            <div class="main">
+                <div class="policy fl-l">
+                    <span class="font-2">
+                        McAllen
+                    </span> <span class="extra-1 inner-ident-3">&copy; 2012 | <a href="#">PRIVACY POLICY</a></span>
+                    <div><!--{%FOOTER_LINK} --></div>
+                </div>
+                <div class="fl-r">
+                    <div class="font-3 inner-ident-4 fl-l">Find Us Elsewhere:</div>
+                    <ul class="fl-l list-4">
+                        <li><a href="#" class="tooltip" title="Twitter"><img src="images/soc-icon-1.png" alt="" /></a></li>
+                        <li><a href="#" class="tooltip" title="Facebook"><img src="images/soc-icon-2.png" alt="" /></a></li>
+                        <li><a href="#" class="tooltip" title="Google+"><img src="images/soc-icon-3.png" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </footer><!-- end footer -->
+</body>
+</html>
