@@ -3,5 +3,18 @@
   "Culture": [ "zh", "zh-Hans", "zh-Hans-CN" ],
   "IsDefault": true,
   "LocalizedStrings": {
+    "Heilongjiang Baoan Lawyer": "黑龙江保安律师事务所",
+    "HOME": "首页",
+    "COMPANY": "企业",
+    "HISTORY": "企业文化",
+    "NEWS": "企业动态",
+    "RESOURCE": "资源下载",
+    "SERVICE": "法律服务",
+    "CASES": "案件案例",
+    "LAWYERS": "律师介绍",
+    "PRICE": "费用价格",
+    "PARTNERS": "合作伙伴",
+    "CONTACTS": "联系我们",
+    "LAWYER {0}": "{0}律师"
   }
 }

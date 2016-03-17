@@ -17,6 +17,9 @@ namespace BaoanLawyer.Models
 
         public DateTime Birthday { get; set; }
 
+        [MaxLength(64)]
+        public string SkilledField { get; set; }
+
         public string Resume { get; set; }
 
         public int PRI { get; set; }
@@ -25,6 +28,13 @@ namespace BaoanLawyer.Models
         public Guid? AvatarId { get; set; }
 
         public File Avatar { get; set; }
+
+        [ForeignKey("Banner")]
+        public Guid? BannerId { get; set; }
+
+        public File Banner { get; set; }
+
+        public bool IsTop { get; set; }
 
         public virtual ICollection<Case> Cases { get; set; } = new List<Case>();
     }

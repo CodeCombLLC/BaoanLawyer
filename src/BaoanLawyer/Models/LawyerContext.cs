@@ -1,9 +1,10 @@
 ﻿using Microsoft.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using CodeComb.AspNet.Upload.Models;
 
 namespace BaoanLawyer.Models
 {
-    public class LawyerContext : IdentityDbContext<User, IdentityRole, string>
+    public class LawyerContext : IdentityDbContext<User, IdentityRole, string>, IFileUploadDbContext
     {
         public DbSet<Lawyer> Lawyers { get; set; }
 
@@ -17,14 +18,18 @@ namespace BaoanLawyer.Models
 
         public DbSet<Information> Informations { get; set; }
 
+        public DbSet<File> Files { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.SetupBlob();
 
             builder.Entity<Lawyer>(e => 
             {
                 e.HasIndex(x => x.PRI);
                 e.HasIndex(x => x.Name);
+                e.HasIndex(x => x.BannerId);
             });
 
             builder.Entity<Case>(e =>

@@ -1,5 +1,116 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{ 
+    ViewBag.Title = "首页";
 }
+
+<div class="block-6">
+    <div class="main">
+        <h1><a href="#"></a></h1>
+    </div>
+</div>
+
+<div class="main">
+    <div class="slide-shadow">
+        <!-- slider -->
+        <div class="slider-holder">
+            <div id="slideshow">
+                @foreach (Lawyer x in ViewBag.Lawyers)
+                {
+                    <div>
+                        <img src="/file/@x.BannerId" alt="@SR["LAWYER {0}", x.Name]" />
+                        <span class="banner">
+                            <span class="banner-inner-1 ident-top-1">@SR["LAWYER {0}", x.Name]</span>
+                            <span class="banner-inner-2 ident-top-2">@SR["SKILLED FIELD"]</span>
+                            <span class="banner-inner-3 ident-top-2">@x.SkilledField</span>
+                            <a class="banner-button ident-top-3" href="#">Click Here!</a>
+                        </span>
+                    </div>
+                }
+            </div>
+            <ul id="nav"></ul>
+        </div><!-- end slider -->
+    </div>
+</div>
+
+<!-- content -->
+<section id="content">
+    <div class="main">
+        <div class="wrapper ident-bot-7">
+            <div class="bg-cover-1 fl-l">
+                <div class="block-7 bg-1">
+                    <h2 class="h2 ident-bot-3">Welcome!</h2>
+                    <div class="line ident-bot-2"></div>
+                    <img class="ident-bot-4" src="images/1page_img1.jpg" alt="" />
+                    <p class="font-4 ident-bot-1">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates doloresed massa lorem.</p>
+                    <p class="font-4 ident-bot-1">Estudesu usandaeItaque earumum reruhitenetura sapientemi delectuuut</p>
+                    <a class="button" href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="bg-cover-2 fl-l">
+                <div class="block-7 bg-2">
+                    <h2 class="h2 ident-bot-3">Advantages</h2>
+                    <div class="line ident-bot-2"></div>
+                    <img class="ident-bot-4" src="images/1page_img2.jpg" alt="" />
+                    <p class="font-4 ident-bot-1">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates Estudesu usandaeItaque earumum reruhitenetura sapientemi delectuuut reicomum iendis voluptatibusasstum maiores alias. Asperiores repellat</p>
+                    <a class="button" href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="bg-cover-3 fl-l">
+                <div class="block-7 bg-3">
+                    <h2 class="h2 ident-bot-3">Practice</h2>
+                    <div class="line ident-bot-4"></div>
+                    <p class="font-4 ident-bot-5">Areledusempquibdameto aurerumoms odes necessitatibus saepe eveniet utoluptates doloresed massa astum.</p>
+                    <ul class="list-1 ident-bot-6">
+                        <li><a href="#">Elder Abuse Cases</a></li>
+                        <li><a href="#">Employment Law</a></li>
+                        <li><a href="#">Family Law</a></li>
+                        <li><a href="#">Immigration Law</a></li>
+                        <li><a href="#">Insurance Law</a></li>
+                        <li><a href="#">Malpractice Law</a></li>
+                        <li><a href="#">Real Property Law</a></li>
+                        <li><a href="#">Securities Law</a></li>
+                        <li><a href="#">Workers' Compensation Law</a></li>
+                        <li><a href="#">Social Security Law</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- end content -->
+<!-- content -->
+<section id="content-2">
+    <div class="container_12">
+        <div class="wrapper">
+            <div class="grid_5 suffix_1">
+                <h2 class="ident-bot-8">Need Practical Help?</h2>
+                <img class="img-border ident-bot-2" src="images/1page_img3.jpg" alt="" />
+                <p><strong>Lorem ipsum dolore concectetuor</strong></p>
+                <p class="ident-bot-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                <a class="button-2" href="#">Read more</a>
+            </div>
+
+            <div class="grid_6">
+                <h2 class="ident-bot-8">Featured Solutions</h2>
+                <div class="wrapper ident-bot-10">
+                    <img class="img-border ident-right-1 fl-l" src="images/1page_img4.jpg" alt="" />
+                    <div class="extra-wrap inner-ident-3">
+                        <ul class="list-5">
+                            <li><a href="#">Business Solutions</a></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                    </div>
+                </div>
+
+                <div class="wrapper ident-bot-11">
+                    <img class="img-border ident-right-1 fl-l" src="images/1page_img5.jpg" alt="" />
+                    <div class="extra-wrap inner-ident-3">
+                        <ul class="list-5">
+                            <li><a href="#">Personal Solutions</a></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua. Ut enim ad minim veniam.  </p>
+                    </div>
+                </div>
+                <a class="button-2" href="#">View All</a>
+            </div>
+        </div>
+    </div>
+</section><!-- end content -->
