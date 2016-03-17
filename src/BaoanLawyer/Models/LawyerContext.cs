@@ -48,12 +48,14 @@ namespace BaoanLawyer.Models
             builder.Entity<Catalog>(e => 
             {
                 e.HasIndex(x => x.PRI);
+                e.HasIndex(x => x.Hide);
             });
 
             builder.Entity<Information>(e => 
             {
                 e.HasIndex(x => x.Time);
                 e.HasIndex(x => x.Title);
+                e.HasIndex(x => x.Top);
             });
         }
     }

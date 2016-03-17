@@ -10,5 +10,7 @@ namespace BaoanLawyer.Models
         public string Title { get; set; }
 
         public int PRI { get; set; }
+
+        public bool Hide { get; set; }
     }
 }

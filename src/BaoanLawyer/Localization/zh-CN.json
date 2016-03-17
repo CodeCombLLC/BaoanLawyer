@@ -15,6 +15,17 @@
     "PRICE": "费用价格",
     "PARTNERS": "合作伙伴",
     "CONTACTS": "联系我们",
-    "LAWYER {0}": "{0}律师"
+    "LAWYER {0}": "{0}律师",
+    "Welcome!": "欢迎您",
+    "READ MORE": "了解更多",
+    "Advantages": "我们的优势",
+    "Practice": "业务范围",
+    "Need Practical Help?": "需要法律咨询？",
+    "Featured Solutions": "特色业务",
+    "Enterprise Solutions": "企业服务",
+    "Personal Solutions": "个人服务",
+    "Registered as a member of this platform, you will gain legal advice, legal advice, case analysis and other services, you can also submit the contract with the customer to us, we will check for you!": "注册成为保安律师事务所会员，本平台可为您提供法律咨询、法律顾问、案件分析等服务，您还可以将与客户的合同提交给我们，我们将为您把关！",
+    "Registered as a member of this platform, you can consult cases online, and pay the fee to submit the case and other operations.": "注册成为保安律师事务所会员，您可进行在线咨询案件，提交案件并支付委托费等操作。",
+    "Register": "注册"
   }
 }

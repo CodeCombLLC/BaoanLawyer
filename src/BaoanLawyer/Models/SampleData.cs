@@ -23,6 +23,9 @@ namespace BaoanLawyer.Models
                 var user = new User { UserName = "admin", Name = "超级管理员" };
                 await UserManager.CreateAsync(user, "123456");
                 await UserManager.AddToRoleAsync(user, "管理员");
+
+                DB.Catalogs.Add(new Catalog { Title = "业务范围" });
+                DB.SaveChanges();
             }
         }
     }

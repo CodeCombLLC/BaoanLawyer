@@ -715,3 +715,9 @@ ul.sf-menu li li li.sfHover ul {
 	background: #fff url('../images/sub-bg-hover.jpg') repeat-x;
 	color:#2490c1;
 }
+
+.blue-content p {
+	font: italic 13px/19px "Trebuchet MS", sans-serif;
+	color:#fff;
+    margin-bottom: 19px;
+}
